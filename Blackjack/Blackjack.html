@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bstyle.css">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div id="dealer">Dealer: </div>
+    <div id="name">Name: </div>
+    <main>
+        <form><input type="submit" id="replay" value="Play again"></form>
+        <h1 id="title">Blackjack</h1>
+        <p id="text">Main Game</p>
+        <button id="start" onclick="startGame()">Start Game</button>
+        <p id="total">Total: </p>
+        <div id="deck">
+            
+        </div>
+        <div id="btns">
+            <button class="btn" id="double" onclick="doubleTurn()">Double</button>
+            <button class="btn" id="draw" onclick="drawCard()">Draw</button>
+            <button class="btn" id="pass" onclick="passTurn()">Pass</button>
+        </div>
+        <form id="n"><input id="namer" type="text" placeholder="Enter your name" onblur="rename()"></form>
+    </main>
+    <div id="money">Money: </div>
+    <script src="Blackjack.js"></script>
+</body>
+</html>

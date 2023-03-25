@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+}
+::-webkit-scrollbar{
+    height: 2.5px;
+    width: 2.5px;
+}
+::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 7px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+body{
+    background: url(back2.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+#dealer{
+    float: left;
+    position: fixed;
+    font-size: 22px;
+}
+#name{
+    right: 0;
+    position: fixed;
+    font-size: 22px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#title{
+    font-size: 70px;
+}
+#text{
+    font-size: 35px;
+    margin: 30px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background: green;
+    border-radius: 17px;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(0, 103, 0);
+}
+button:active{
+    background: rgb(0, 79, 0);
+}
+#total{
+    font-size: 30px;
+    margin: 30px;
+    display:none;
+}
+#deck{
+    display: flex;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    background: rgb(212, 212, 212);
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    transition: transform 250ms ease-in-out;
+    position: relative;
+    box-shadow: -18px 0 54px #000;
+}
+.card:hover{
+    transform: translateY(-30px);
+}
+.card:hover~.card{
+    transform: translateX(35px);
+}
+.cardc{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background: green;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#double{
+    background: blue;
+    display:none;
+}
+#double:hover{
+    background: rgb(0, 0, 189);
+}
+#double:active{
+    background: rgb(0, 0, 154);
+}
+#pass{
+    background: red;
+    display:none;
+}
+#pass:hover{
+    background: rgb(191, 0, 0);
+}
+#pass:active{
+    background: rgb(168, 0, 0);
+}
+#draw{
+    display:none;
+}
+#money{
+    font-size: 22px;
+    float: left;
+    position: fixed;
+    bottom: 10px;
+}
+#n{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#replay{
+    font-size: 30px;
+    border-radius: 17px;
+    background-color: green;
+    padding: 7px;
+    display: none;
+}
